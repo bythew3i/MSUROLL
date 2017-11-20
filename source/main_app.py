@@ -5,8 +5,12 @@ import time
 import threading
 from splinter import Browser
 import re
+import urllib.request
 
-# import sys
+# import sys # for debug purpose
+
+# path for chromedriver
+executable_path = {'executable_path':'/usr/local/bin/chromedriver'}
 
 class MSUROLLAPP(Tk):
     def __init__(self):
@@ -31,7 +35,11 @@ class MSUROLLAPP(Tk):
 
         self.showFrame("MainPage")
 
-        self.checkUpdates()
+        self.updateURL = "https://raw.githubusercontent.com/by-the-w3i/MSU_ROLL/master/VERSION"
+        self.downloadURL = "https://github.com/by-the-w3i/MSU_ROLL"
+        self.version = "1.0"
+
+
 
     def showFrame(self, page_name):
         '''Show a frame for the given page name'''
@@ -39,7 +47,26 @@ class MSUROLLAPP(Tk):
         frame.tkraise()
 
     def checkUpdates(self):
-        pass
+        try:
+            with urllib.request.urlopen(self.updateURL) as response:
+                latest_version = response.read().decode('utf-8').strip()
+                if self.version != latest_version:
+                    messagebox.showinfo(
+                        "Update",
+                        "Current Version: {}\n\nThe latest version {} is out.\n\nPlease download from {}".format(self.version, latest_version, self.downloadURL)
+                    )
+                else:
+                    messagebox.showinfo(
+                        "Update",
+                        "Current version is the latest one."
+                    )
+        except:
+            messagebox.showwarning(
+                "Internet Error",
+                "The Internet is NOT CONNECTED."
+            )
+
+
 
 
 class MainPage(Frame):
@@ -90,19 +117,31 @@ class MainPage(Frame):
         Button(self, text="delete", command=self.delCourse).grid(row=5, column=2, sticky=(E,W))
 
         Button(self, text="Start Rolling >>>", command=self.rolling).grid(row=6,columnspan=3, sticky=(E,W))
+        Button(self, text="Check for updates", command=lambda:self.controller.checkUpdates()).grid(row=7,columnspan=3, sticky=(E,W))
+
 
     def authentication(self, ID, PW):
-        b = Browser('chrome', headless=True)
-        URL = "https://schedule.msu.edu/Login.aspx"
-        b.visit(URL)
-        b.find_by_id("netid").fill(ID)
-        b.find_by_id("pswd").fill(PW)
-        b.find_by_value("Login").click()
-        url = b.url
-        b.quit()
-        if url == "https://login.msu.edu/Login":
-            return False
-        return True
+        try:
+            b = Browser('chrome', headless=True, **executable_path)
+            URL = "https://schedule.msu.edu/Login.aspx"
+            b.visit(URL)
+            b.find_by_id("netid").fill(ID)
+            b.find_by_id("pswd").fill(PW)
+            b.find_by_value("Login").click()
+            url = b.url
+            b.quit()
+            if url == "https://login.msu.edu/Login":
+                return False
+            return True
+        except:
+            messagebox.showwarning(
+                "System Error",
+                "Error: chromedriver not found!!!"
+            )
+            # messagebox.showwarning(
+            #     "System Error",
+            #     "Error:{}\n{}".format(sys.exc_info()[0], sys.exc_info()[1])
+            # )
 
     def addCourse(self):
         course_lst = [s.strip() for s in self.sub_entry.get().strip().split()]
@@ -278,7 +317,7 @@ class RollingPage(Frame):
         URL = "https://schedule.msu.edu"
         URL_PLAN = "https://schedule.msu.edu/Planner.aspx"
 
-        b = Browser('chrome', headless=True)
+        b = Browser('chrome', headless=True, **executable_path)
         for course in CLS_LST:
             tar = course.split()
             TERM = "{} {}".format(tar[1], tar[0])

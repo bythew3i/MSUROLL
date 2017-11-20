@@ -1,0 +1,75 @@
+missing module named pyimod03_importers - imported by /usr/local/lib/python3.6/site-packages/PyInstaller/loader/rthooks/pyi_rth_pkgres.py
+missing module named 'multiprocessing.forking' - imported by /usr/local/lib/python3.6/site-packages/PyInstaller/loader/rthooks/pyi_rth_multiprocessing.py
+missing module named copy_reg - imported by cStringIO, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named cStringIO - imported by selenium.webdriver.firefox.firefox_profile, pytz.tzfile, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named 'six.moves.urllib' - imported by 'six.moves.urllib', /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named httplib - imported by selenium.webdriver.firefox.webdriver, selenium.webdriver.remote.remote_connection, selenium.webdriver.safari.webdriver, selenium.webdriver.blackberry.webdriver, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named urllib2 - imported by selenium.webdriver.common.utils, selenium.webdriver.remote.remote_connection, selenium.webdriver.common.service, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named zope - imported by splinter.driver.zopetestbrowser, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named mechanize - imported by splinter.driver.zopetestbrowser, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named win32evtlogutil - imported by logging.handlers, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named win32evtlog - imported by logging.handlers, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+runtime module named six.moves - imported by 'six.moves.urllib', /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named mock - imported by django.test, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named bpython - imported by django.core.management.commands.shell
+missing module named pyinotify - imported by django.utils.autoreload, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named _systemrestart - imported by django.utils.autoreload, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named StringIO - imported by selenium.webdriver.remote.webelement, django.utils.six, six, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py, pkg_resources._vendor.six
+missing module named 'django.utils.six.moves' - imported by django.utils.encoding, django.urls.base, django.dispatch.dispatcher, django.utils.http, django.utils.html, django.utils.text, django.utils.html_parser, django.http.cookie, django.utils.crypto, django.http.multipartparser, django.http.request, django.templatetags.static, django.core.files.storage, django.contrib.staticfiles.storage, django.forms.widgets, django.middleware.csrf, django.utils.ipv6, django.core.validators, django.forms.fields, django.forms.formsets, django.db.models.lookups, django.db.models.base, django.http.response, django.utils.regex_helper, django.utils.autoreload, django.contrib.auth.decorators, django.contrib.auth.views, django.test.client, django.core.servers.basehttp, django.test.testcases, django.views.static, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py, django.core.management.commands.flush, django.core.cache.backends.db, django.core.management.templates, django.db.migrations.questioner, django.core.management.commands.makemigrations, django.db.models.sql.compiler, django.db.backends.base.base, django.db.backends.base.creation, django.db.backends.oracle.creation, django.db.backends.sqlite3.creation, django.core.cache.backends.locmem, django.core.cache.backends.filebased
+missing module named UserList - imported by django.forms.utils, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named jinja2 - imported by django.template.backends.jinja2, django.test.utils, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named django.db.models.AutoField - imported by django.db.models, django.forms.models, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named win32wnet - imported by uuid, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named netbios - imported by uuid, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named PIL - imported by django.core.validators, django.forms.fields, django.core.files.images, django.db.models.fields.files, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named pylibmc - imported by django.core.cache.backends.memcached
+missing module named memcache - imported by django.core.cache.backends.memcached
+missing module named django.db.models.DurationField - imported by django.db.models, django.db.backends.oracle.functions, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named django.db.models.DecimalField - imported by django.db.models, django.db.backends.oracle.functions, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named sqlparse - imported by django.db.backends.base.operations
+missing module named 'MySQLdb.converters' - imported by django.db.backends.mysql.base, django.db.backends.mysql.schema
+missing module named 'MySQLdb.constants' - imported by django.db.backends.mysql.base, django.db.backends.mysql.introspection
+missing module named MySQLdb - imported by django.db.backends.mysql.base
+missing module named pysqlite2 - imported by django.db.backends.sqlite3.base
+missing module named cx_Oracle - imported by django.db.backends.oracle.base, django.db.backends.oracle.introspection
+missing module named 'psycopg2.extras' - imported by django.db.backends.postgresql.base, django.db.backends.postgresql.operations
+missing module named 'psycopg2.extensions' - imported by django.db.backends.postgresql.base
+missing module named psycopg2 - imported by django.db.backends.postgresql.base, django.db.backends.postgresql.schema
+missing module named UserDict - imported by pytz.lazy, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named sets - imported by pytz.tzinfo, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named pkg_resources.extern.six - imported by pkg_resources.extern, pkg_resources, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named 'pkg_resources.extern.six.moves' - imported by pkg_resources, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py, pkg_resources._vendor.packaging.requirements
+missing module named pkg_resources.extern.appdirs - imported by pkg_resources.extern, pkg_resources, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named pkg_resources.extern.packaging - imported by pkg_resources.extern, pkg_resources, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named __main__ - imported by pkg_resources, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named 'pkg_resources.extern.pyparsing' - imported by pkg_resources._vendor.packaging.markers, pkg_resources._vendor.packaging.requirements
+missing module named 'win32com.shell' - imported by pkg_resources._vendor.appdirs
+missing module named 'com.sun' - imported by pkg_resources._vendor.appdirs
+missing module named com - imported by pkg_resources._vendor.appdirs
+missing module named win32api - imported by pkg_resources._vendor.appdirs
+missing module named win32com - imported by pkg_resources._vendor.appdirs
+missing module named __builtin__ - imported by pkg_resources._vendor.pyparsing
+missing module named ordereddict - imported by pkg_resources._vendor.pyparsing
+missing module named flask - imported by splinter.browser, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named urlparse - imported by selenium.webdriver.remote.remote_connection, splinter.driver.webdriver.cookie_manager, lxml.html, django.utils.http, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named org - imported by pickle, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named _winreg - imported by platform, selenium.webdriver.firefox.firefox_binary, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py, pkg_resources._vendor.appdirs
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named vms_lib - imported by platform, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named winreg - imported by platform, mimetypes, urllib.request, selenium.webdriver.firefox.firefox_binary, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named urllib.urlopen - imported by urllib, lxml.html, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named urllib.urlencode - imported by urllib, lxml.html, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named java - imported by platform, unittest.mock, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named 'org.python' - imported by copy, xml.sax, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named nt - imported by os, ntpath, shutil, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named msvcrt - imported by subprocess, getpass, multiprocessing.spawn, multiprocessing.popen_spawn_win32, django.core.files.locks, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named _winapi - imported by subprocess, multiprocessing.reduction, multiprocessing.connection, multiprocessing.heap, multiprocessing.popen_spawn_win32, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py
+missing module named _dummy_threading - imported by dummy_threading, /Users/Jevin/Desktop/MSU_ROLL/source/main_app.py

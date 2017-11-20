@@ -1,0 +1,3 @@
+([('MSUroll',
+   '/Users/Jevin/Desktop/MSU_ROLL/source/dist/MSUroll',
+   'EXECUTABLE')],)
