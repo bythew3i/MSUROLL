@@ -21,6 +21,6 @@
 > `源代码`: [Github](https://github.com/by-the-w3i/MSU_ROLL) , [Documents](https://by-the-w3i.github.io/MSU_ROLL/)
 
 ## MAC 安装 <a name="mac-setup"/>
-####step 1: 下载安装 MSUroll APP
-####step 2: 下载安装 chromedrive 插件
-####step 3： 直接跳到 [使用说明](#intro)
+#### step 1: 下载安装 MSUroll APP
+#### step 2: 下载安装 chromedrive 插件
+#### step 3： 直接跳到 [使用说明](#intro)
