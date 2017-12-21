@@ -3,9 +3,9 @@
 ## 目录
 - [入坑须知](#desc)
 
-- [mac 安装](#mac_setup)
+- [mac 安装](#mac-setup)
 
-- [windows 安装](#win_setup)
+- [windows 安装](#win-setup)
 
 - [使用说明](#intro)
 
@@ -18,4 +18,9 @@
 >
 > `注意`：MSUroll **不是黑客攻击程序**，所以不存在违反校规校纪的情况。全程操作属于 **合法合规** 地选课。
 >
-> `源代码`：:octocat: [Github](https://github.com/by-the-w3i/MSU_ROLL)
+> `源代码`: [Github](https://github.com/by-the-w3i/MSU_ROLL) , [Documents](https://by-the-w3i.github.io/MSU_ROLL/)
+
+## MAC 安装 <a name="mac-setup"/>
+####step 1: 下载安装 MSUroll APP
+####step 2: 下载安装 chromedrive 插件
+####step 3： 直接跳到 [使用说明](#intro)
