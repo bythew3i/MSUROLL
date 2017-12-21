@@ -1,7 +1,7 @@
 # **MSUroll** 抢课神器指南
 
-##目录
-- [简介](#desc)
+## 目录
+- [入坑须知](#desc)
 
 - [mac 安装](#mac_setup)
 
@@ -9,42 +9,13 @@
 
 - [使用说明](#intro)
 
-## 简介<a name="desc" />
+## 入坑须知 <a name="desc"/>
+> 起源：本人为 MSU 大四 CSE 学生。由于大一时抢不到专业课，便立志有朝一日必写一个“抢课程序”。加之毕业在即，本人利用平常空闲时间开发了`MSUroll`，希望可以为抢课烦恼的同学们带来帮助。
 
-## Example2
->Markdown is a way to write content for the web. It’s written in what nerds like to call “plaintext”, which is exactly the sort of text you’re used to writing and seeing. Plaintext is just the regular alphabet, with a few familiar symbols, like asterisks ( * ) and backticks ( ` ).
+> 简介：MSUroll有以下两点主要功能
+> - `秒enroll`（如果该课有位置，可以在 3 秒内完成 enroll）
+> - `秒抢课` （如果该课已满，能在第一时间检测到有人drop，并自动完成 enroll）
 
-Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
+> 注意：MSUroll **不是黑客攻击程序**，所以不存在违反校规校纪的情况。全程操作属于 **合法合规** 地选课。
 
-Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
-
-If you have ten minutes, you can learn Markdown!
-
-In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
-
-Markdown is a way to write content for the web. It’s written in what nerds like to call “plaintext”, which is exactly the sort of text you’re used to writing and seeing. Plaintext is just the regular alphabet, with a few familiar symbols, like asterisks ( * ) and backticks ( ` ).
-
-Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
-
-Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
-
-If you have ten minutes, you can learn Markdown!
-
-In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
-
-Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
-
-Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
-
-If you have ten minutes, you can learn Markdown!
-
-In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
-## Third Example <a name="intro"></a>
-
-Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
-
-Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
-
-If you have ten minutes, you can learn Markdown!
-
-In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
+> 源代码：:octocat: [Github](https://github.com/by-the-w3i/MSU_ROLL)
