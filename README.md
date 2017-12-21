@@ -1,37 +1,50 @@
-## 你好
+# **MSUroll** 抢课神器指南
 
-You can use the [editor on GitHub](https://github.com/by-the-w3i/MSU_ROLL/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##目录
+- [简介](#desc)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- [mac 安装](#mac_setup)
 
-### Markdown
+- [windows 安装](#win_setup)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- [使用说明](#intro)
 
-```markdown
-Syntax highlighted code block
+## 简介<a name="desc" />
 
-# Header 1
-## Header 2
-### Header 3
+## Example2
+>Markdown is a way to write content for the web. It’s written in what nerds like to call “plaintext”, which is exactly the sort of text you’re used to writing and seeing. Plaintext is just the regular alphabet, with a few familiar symbols, like asterisks ( * ) and backticks ( ` ).
 
-- Bulleted
-- List
+Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
 
-1. Numbered
-2. List
+Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
 
-**Bold** and _Italic_ and `Code` text
+If you have ten minutes, you can learn Markdown!
 
-[Link](url) and ![Image](src)
-```
+In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Markdown is a way to write content for the web. It’s written in what nerds like to call “plaintext”, which is exactly the sort of text you’re used to writing and seeing. Plaintext is just the regular alphabet, with a few familiar symbols, like asterisks ( * ) and backticks ( ` ).
 
-### Jekyll Themes
+Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/by-the-w3i/MSU_ROLL/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
 
-### Support or Contact
+If you have ten minutes, you can learn Markdown!
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
+
+Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
+
+Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
+
+If you have ten minutes, you can learn Markdown!
+
+In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
+## Third Example <a name="intro"></a>
+
+Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
+
+Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything fancy like change the font size, color, or type. All you have control over is the display of the text—stuff like making things bold, creating headers, and organizing lists.
+
+If you have ten minutes, you can learn Markdown!
+
+In each lesson, you’ll be given an introduction to a single Markdown concept. Then, you’ll be asked to complete several exercises with that new knowledge.
