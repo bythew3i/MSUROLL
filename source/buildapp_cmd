@@ -1,9 +1,12 @@
-
+# first run
 pyinstaller -F -w -i sushi.icns -n MSUroll main_app.py
 
-rm -rf disk
+# recompile
+rm -rf dist
 pyinstaller --clean  -w -F MSUroll.spec
 
+
+# imports
 hiddenimports=['splinter', 'html.parser']
 
 # retina display

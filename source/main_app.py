@@ -5,7 +5,7 @@ import time
 import threading
 from splinter import Browser
 import re
-import urllib.request
+from urllib.request import urlopen
 
 # import sys # for debug purpose
 
@@ -48,7 +48,7 @@ class MSUROLLAPP(Tk):
 
     def checkUpdates(self):
         try:
-            with urllib.request.urlopen(self.updateURL) as response:
+            with urlopen(self.updateURL) as response:
                 latest_version = response.read().decode('utf-8').strip()
                 if self.version != latest_version:
                     messagebox.showinfo(
