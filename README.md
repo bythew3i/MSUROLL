@@ -21,6 +21,55 @@
 > `源代码`: [Github](https://github.com/by-the-w3i/MSU_ROLL) , [Documents](https://by-the-w3i.github.io/MSU_ROLL/)
 
 ## MAC 安装 <a name="mac-setup"/>
-#### step 1: 下载安装 MSUroll APP
-#### step 2: 下载安装 chromedrive 插件
-#### step 3： 直接跳到 [使用说明](#intro)
+**step 1: 下载 MSUroll APP**
+> 下载 `MSUroll_disk.dmg`：https://github.com/by-the-w3i/MSU_ROLL/releases
+
+
+**step 2: 安装 MSUroll 及 chromedriver 插件**
+> 打开 `MSUroll_disk.dmg`
+>
+> ![open dmg file](./mac_download/screenshots/open_dmg.png)
+>
+> `spotlight` 搜索 `terminal` 并回车
+>
+> ![spotlight search](./mac_download/screenshots/spotlight.png)
+>
+> 在 `terminal` 里粘贴以下代码并回车
+>
+> ```bash
+> sh /Volumes/MSU_ROLL/mac_chromedriver_install.sh
+> ```
+> ![sudo password](./mac_download/screenshots/pass.png)
+>
+> 在 `terminal` 输入以下代码， 检查 `chromedriver`  插件是否成功安装
+>
+> ```bash
+> ls /usr/local/bin/ | grep chrom
+> ```
+> ![check install](./mac_download/screenshots/check.png)
+>
+> 将 MSUroll 拽入 *应用程序文件夹* (`Applications`)
+>
+> ![drag](./mac_download/screenshots/drag_app.png)
+>
+> 打开程序
+>
+> ![open app](./mac_download/screenshots/open.png)
+>
+> 如果碰到以下问题：
+>
+> ![warning](./mac_download/screenshots/warning.png)
+>
+> 解决方案：
+>
+> ```
+> System Preferences >> Security & Privacy >> open MSUroll anyway
+> ```
+>
+> ![step 1](./mac_download/screenshots/step1.png)
+>
+> 成功打开 APP
+>
+> ![success](./mac_download/screenshots/success.png)
+
+**step 3：直接跳至[使用说明](#intro)**
