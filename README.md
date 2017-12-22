@@ -13,7 +13,7 @@
 > `起源`：本人为 MSU 大四 CSE 学生。由于大一时抢不到专业课，便立志有朝一日必写一个“抢课程序”。加之毕业在即，本人利用平常空闲时间开发了MSUroll，希望可以为抢课烦恼的同学们带来帮助。
 >
 > `简介`：MSUroll有以下两点主要功能
-> - *秒enroll*（如果该课有位置，可以在 3 秒内完成 enroll）
+> - *秒 enroll*（如果该课有位置，可以在 3 秒内完成 enroll）
 > - *秒抢课* （如果该课已满，能在第一时间检测到有人drop，并自动完成 enroll）
 >
 > `注意`：MSUroll **不是黑客攻击程序**，所以不存在违反校规校纪的情况。全程操作属于 **合法合规** 地选课。
@@ -22,7 +22,7 @@
 
 ## MAC 安装 <a name="mac-setup"/>
 **step 0: 检查 Mac 版本**
-> Mac 系统版本 必须 >= `10.13.1` `macOS High Sierra`， 否则 MSUroll 无法运行
+> Mac 系统版本 必须 >= `10.13.1` `macOS High Sierra`， 否则 MSUroll 将无法运行
 
 **step 1: 下载 MSUroll APP**
 > 下载 `MSUroll_disk.dmg`：[https://github.com/by-the-w3i/MSU_ROLL/releases](https://github.com/by-the-w3i/MSU_ROLL/releases)
@@ -78,9 +78,54 @@
 **step 3：传送至[使用说明](#intro)**
 
 ## Windows 安装 <a name="win-setup"/>
-### it's coming
+**step 1: 下载 MSUroll APP**
+> 下载 `MSUroll_win.zip` : [https://github.com/by-the-w3i/MSU_ROLL/releases](https://github.com/by-the-w3i/MSU_ROLL/releases)
 
-## 使用说明 <a name="intro"/>
+**step 2: 安装 MSUroll**
+> 解压 `MSUroll_win.zip` 得到 `MSUroll_win` 文件夹
+>
+> ![decompress](./win_download/screenshots/decompress.png)
+>
+> 打开 `MSUroll_win` 文件夹，拷贝 `MSUroll` 文件夹
+>
+> ![copy](./win_download/screenshots/copy.png)
+>
+> 将 `MSUroll` 文件夹粘贴至 `C盘` *（必须是 **C盘** exactly）*
+>
+> ![paste](./win_download/screenshots/paste.png)
+>
+> 打开 `MSUroll` 文件夹，找到 `MSUroll.exe` 文件， 右击创建桌面快捷方式
+>
+> ![send](./win_download/screenshots/send.png)
+>
+> 回到电脑桌面，你将看到
+>
+> ![desktop](./win_download/screenshots/desktop.png)
+>
+> 打开 `MSUroll.exe`
+>
+> ![gui](./win_download/screenshots/gui.png)
+>
+> 如果碰到以下问题：
+>
+> ![warn](./win_download/screenshots/warn.png)
+>
+> 解决方案：
+>
+> ![solve 1](./win_download/screenshots/solve1.png)
+>
+> ![solve 2](./win_download/screenshots/solve2.png)
+>
+**step 3：传送至[使用说明](#intro)**
+
+
+#<a name="intro"/>
+## 使用说明
+> ### windows 用户请注意
+> > 如果有以下类似弹窗，属于正常现象，请选择 **忽略** 或者 **最小化**，***千万不能关闭***
+>
+> ![pop up](./win_download/screenshots/popup.png)
+>
 > ### 选课
 >
 > ![choose classes](./mac_download/screenshots/choose.png)
@@ -90,3 +135,4 @@
 > ### 抢课
 >
 > ![validating classes](./mac_download/screenshots/waiting.png)
+>
