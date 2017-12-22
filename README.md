@@ -21,6 +21,9 @@
 > `源代码`: [Github](https://github.com/by-the-w3i/MSU_ROLL) , [Documents](https://by-the-w3i.github.io/MSU_ROLL/)
 
 ## MAC 安装 <a name="mac-setup"/>
+**step 0: 检查 Mac 版本**
+> Mac 系统版本 必须 >= `10.13.1` `macOS High Sierra`， 否则 MSUroll 无法运行
+
 **step 1: 下载 MSUroll APP**
 > 下载 `MSUroll_disk.dmg`：https://github.com/by-the-w3i/MSU_ROLL/releases
 
@@ -72,4 +75,18 @@
 >
 > ![success](./mac_download/screenshots/success.png)
 
-**step 3：直接跳至[使用说明](#intro)**
+**step 3：传送至[使用说明](#intro)**
+
+## Windows 安装 <a name="win-setup"/>
+### it's coming
+
+## 使用说明 <a name="intro"/>
+> ### 选课
+>
+> ![choose classes](./mac_download/screenshots/choose.png)
+>
+> ![confirm](./mac_download/screenshots/confirm.png)
+>
+> ### 抢课
+>
+> ![validating classes](./mac_download/screenshots/waiting.png)
