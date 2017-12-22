@@ -25,7 +25,7 @@
 > Mac 系统版本 必须 >= `10.13.1` `macOS High Sierra`， 否则 MSUroll 无法运行
 
 **step 1: 下载 MSUroll APP**
-> 下载 `MSUroll_disk.dmg`：https://github.com/by-the-w3i/MSU_ROLL/releases
+> 下载 `MSUroll_disk.dmg`：[https://github.com/by-the-w3i/MSU_ROLL/releases](https://github.com/by-the-w3i/MSU_ROLL/releases)
 
 
 **step 2: 安装 MSUroll 及 chromedriver 插件**
