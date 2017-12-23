@@ -7,7 +7,7 @@ from splinter import Browser
 import re
 from urllib.request import urlopen
 
-# import sys # for debug purpose
+import sys # for debug purpose
 
 # path for chromedriver
 executable_path = {'executable_path':'/usr/local/bin/chromedriver'}
@@ -36,8 +36,8 @@ class MSUROLLAPP(Tk):
         self.showFrame("MainPage")
 
         self.updateURL = "https://raw.githubusercontent.com/by-the-w3i/MSU_ROLL/master/VERSION"
-        self.downloadURL = "https://github.com/by-the-w3i/MSU_ROLL"
-        self.version = "1.0"
+        self.downloadURL = "https://github.com/by-the-w3i/MSU_ROLL/releases"
+        self.version = "1.1"
 
 
 
@@ -134,14 +134,14 @@ class MainPage(Frame):
                 return False
             return True
         except:
-            messagebox.showwarning(
-                "System Error",
-                "Error: chromedriver not found!!!"
-            )
             # messagebox.showwarning(
             #     "System Error",
-            #     "Error:{}\n{}".format(sys.exc_info()[0], sys.exc_info()[1])
+            #     "Error: chromedriver not found!!!"
             # )
+            messagebox.showwarning(
+                "System Error",
+                "Error:{}\n{}".format(sys.exc_info()[0], sys.exc_info()[1])
+            )
 
     def addCourse(self):
         course_lst = [s.strip() for s in self.sub_entry.get().strip().split()]
@@ -153,10 +153,10 @@ class MainPage(Frame):
                 "Add Error",
                 "Year: Please input a valid year! (make sure there is no space)"
             )
-        elif len(course_lst) != 2 or (not course_lst[1].isdigit()):
+        elif len(course_lst) != 2:
             messagebox.showwarning(
                 "Add Error",
-                "Subject should be seperated by a space. Format should be 'CSE 415'"
+                "Subject should be separated by a space. Format should be 'CSE 415'or 'IAH 241A'"
             )
 
         elif not section.isdigit():
@@ -166,7 +166,7 @@ class MainPage(Frame):
             )
 
         else:
-            info = "{} {} {} sec{}".format(year,self.season.get(), course, section)
+            info = "{} {} {} sec{}".format(year,self.season.get(), course, int(section))
             if info not in self.targets:
                 self.targets.append(info)
                 self.courses.insert(END, info)
