@@ -159,6 +159,5 @@
 
 # <a name="feedback" />
 ## 问题反馈与技术交流：
-`wechat` : 351425189
 
 `email` : jevin0change@gmail.com
