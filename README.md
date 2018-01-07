@@ -165,7 +165,7 @@
 
 `微信群`：扫码添加后请求平台君拉入 【MSUroll抢课软件问题反馈】群
 
-<img src="/img/contact.jpg" alt="QR" width="50%" >
+<img src="./contact.jpg" alt="QR" width="50%" >
 
 <small class="img-hint"> 扫码添加后请求平台君拉入 【MSUroll抢课软件问题反馈】群</small>
 
