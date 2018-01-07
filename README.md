@@ -169,6 +169,6 @@
 
 <small class="img-hint"> 扫码添加后请求平台君拉入 【MSUroll抢课软件问题反馈】群</small>
 
-`评论区` : [「入口」](https://by-the-w3i.github.io/2017/12/22/MSUROLL/#feedback)
+`评论区` : [「入口」](https://by-the-w3i.github.io/2017/12/22/MSUROLL/#comment)
 
 `email` : jevin0change@gmail.com
