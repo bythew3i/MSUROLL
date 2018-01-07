@@ -163,6 +163,6 @@
 # <a name="feedback" />
 ## 问题反馈与技术交流：
 
-`email` : jevin0change@gmail.com
+`评论区` : [「入口」](https://by-the-w3i.github.io/2017/12/22/MSUROLL/#feedback)
 
-`评论区入口` : https://by-the-w3i.github.io/2017/12/22/MSUROLL/#feedback
+`email` : jevin0change@gmail.com
