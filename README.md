@@ -1,6 +1,8 @@
 # **MSUroll** 抢课神器指南
 
-> 此 [入口](https://by-the-w3i.github.io/2017/12/22/MSUROLL/) 品读本文更佳
+> 此 [「入口」](https://by-the-w3i.github.io/2017/12/22/MSUROLL/) 品读本文更佳
+
+
 ## 目录
 - [入坑须知](#desc)
 
