@@ -141,6 +141,7 @@
 >
 > ---
 >
+>
 > ### 选课
 >
 > ![choose classes](./mac_download/screenshots/choose.png)
@@ -159,6 +160,17 @@
 >
 > ![done](./mac_download/screenshots/finish.png)
 >
+> ---
+> ### Mac 用户请注意
+> 如果有选课界面出现异常的 `[ERROR]`
+> 请下载 [MSUroll_disk_debug.dmg](https://github.com/by-the-w3i/MSU_ROLL/releases)
+> ![warning](./mac_download/screenshots/download.png)
+>
+>
+> 出现弹窗属于正常现象
+> ![warning](./mac_download/screenshots/pop.png)
+>
+> ---
 
 # <a name="feedback" />
 ## 问题反馈与技术交流：
