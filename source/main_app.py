@@ -11,6 +11,7 @@ import sys # for debug purpose
 
 # path for chromedriver
 executable_path = {'executable_path':'/usr/local/bin/chromedriver'}
+HEADLESS = True
 
 class MSUROLLAPP(Tk):
     def __init__(self):
@@ -122,7 +123,7 @@ class MainPage(Frame):
 
     def authentication(self, ID, PW):
         try:
-            b = Browser('chrome', headless=True, **executable_path)
+            b = Browser('chrome', headless=HEADLESS, **executable_path)
             URL = "https://schedule.msu.edu/Login.aspx"
             b.visit(URL)
             b.find_by_id("netid").fill(ID)
@@ -317,7 +318,7 @@ class RollingPage(Frame):
         URL = "https://schedule.msu.edu"
         URL_PLAN = "https://schedule.msu.edu/Planner.aspx"
 
-        b = Browser('chrome', headless=True, **executable_path)
+        b = Browser('chrome', headless=HEADLESS, **executable_path)
         for course in CLS_LST:
             tar = course.split()
             TERM = "{} {}".format(tar[1], tar[0])

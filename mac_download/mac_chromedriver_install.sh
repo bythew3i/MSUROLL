@@ -5,6 +5,6 @@
 # sh mac_chromedriver_install.sh
 sudo mkdir /usr/local/
 sudo mkdir /usr/local/bin
-sudo cp /Volumes/MSU_ROLL/chromedriver /usr/local/bin
+sudo mv ~/Desktop/chromedriver /usr/local/bin
 echo
 echo FINISHED!!!
