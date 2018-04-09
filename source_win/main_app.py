@@ -98,26 +98,32 @@ class MainPage(Frame):
         self.season.set("Spring")
         OptionMenu(self, self.season, "Fall", "Spring", "Summer").grid(row=2,column=2)
 
+        self.tentative = IntVar(self)
+        self.tentative.set(0)
+        Checkbutton(self, text="Is tentative term?", variable=self.tentative).grid(row=3,columnspan=3, sticky=E)
+
         # Message(self, text="Seperate by a single space." ,fg='red', anchor=E, width=50).grid(row=3, columnspan=3)
-        Label(self, text="Subject:").grid(row=3, column=0, sticky=E)
+        Label(self, text="Subject:").grid(row=4, column=0, sticky=E)
         self.sub_entry = Entry(self, width=10)
         self.sub_entry.insert(0,'CSE 415')
-        self.sub_entry.grid(row=3, column=1, columnspan=2, sticky=(E,W))
+        self.sub_entry.grid(row=4, column=1, columnspan=2, sticky=(E,W))
 
-        Label(self, text="Section:").grid(row=4, column=0, sticky=E)
+        Label(self, text="Section:").grid(row=5, column=0, sticky=E)
         self.sec_entry = Entry(self, width=10)
         self.sec_entry.insert(0,'1')
-        self.sec_entry.grid(row=4, column=1)
+        self.sec_entry.grid(row=5, column=1)
 
-        Button(self, text="add to list", command=self.addCourse).grid(row=4, column=2, sticky=(E,W))
+        Button(self, text="add to list", command=self.addCourse).grid(row=5, column=2, sticky=(E,W))
 
         self.courses = Listbox(self)
-        self.courses.grid(row=5, column=0, columnspan=2)
+        self.courses.grid(row=6, column=0, columnspan=2)
 
-        Button(self, text="delete", command=self.delCourse).grid(row=5, column=2, sticky=(E,W))
+        Button(self, text="delete", command=self.delCourse).grid(row=6, column=2, sticky=(E,W))
 
-        Button(self, text="Start Rolling >>>", command=self.rolling).grid(row=6,columnspan=3, sticky=(E,W))
-        Button(self, text="Check for updates", command=lambda:self.controller.checkUpdates()).grid(row=7,columnspan=3, sticky=(E,W))
+        Button(self, text="Start Rolling >>>", command=self.rolling).grid(row=7,columnspan=3, sticky=(E,W))
+        Button(self, text="Save Course List", command=self.saveCourse).grid(row=8,columnspan=3, sticky=(E, W))
+        Button(self, text="Load Course List", command=self.loadCourse).grid(row=9,columnspan=3, sticky=(E, W))
+        Button(self, text="Check for updates", command=lambda:self.controller.checkUpdates()).grid(row=10,columnspan=3, sticky=(E,W))
 
 
     def authentication(self, ID, PW):
@@ -166,6 +172,7 @@ class MainPage(Frame):
             )
 
         else:
+            year += ["", "-Tentative"][self.tentative.get()]
             info = "{} {} {} sec{}".format(year,self.season.get(), course, int(section))
             if info not in self.targets:
                 self.targets.append(info)
@@ -175,7 +182,6 @@ class MainPage(Frame):
                     "Add Error",
                     "Duplicate: {}".format(info)
                 )
-
 
 
     def delCourse(self):
@@ -189,6 +195,44 @@ class MainPage(Frame):
             ind = to_del[0]
             self.targets.remove(self.courses.get(ind))
             self.courses.delete(ind)
+
+
+    def saveCourse(self):
+        if len(self.targets) == 0:
+            messagebox.showwarning(
+                "Save Error",
+                "There is nothing to save!"
+            )
+            return
+
+        with open("courses.lst", 'wb') as file:
+            pickle.dump(self.targets, file)
+            messagebox.showinfo(
+                "Success",
+                "Course list has been successfully saved!"
+            )
+
+
+    def loadCourse(self):
+        if len(self.targets) > 0:
+            is_continue = messagebox.askyesno(
+                "Continue?",
+                "Load course will override current course list. Are you sure?"
+            )
+            if not is_continue:
+                return
+
+        try:
+            with open("courses.lst", 'rb') as file:
+                self.targets = pickle.load(file)
+                self.courses.delete(0, END)
+                for course in self.targets:
+                    self.courses.insert(END, course)
+        except FileNotFoundError:
+            messagebox.showwarning(
+                "Load Error",
+                "Save file not found!"
+            )
 
 
     def rolling(self):
