@@ -38,7 +38,7 @@ class MSUROLLAPP(Tk):
 
         self.updateURL = "https://raw.githubusercontent.com/by-the-w3i/MSU_ROLL/master/VERSION"
         self.downloadURL = "https://github.com/by-the-w3i/MSU_ROLL/releases"
-        self.version = "1.1"
+        self.version = "1.3"
 
 
 
@@ -329,7 +329,8 @@ class RollingPage(Frame):
             try:
                 # put all the list class in to user account planner
                 b.visit(URL)
-                term = b.find_by_text(TERM).value
+                # term = b.find_by_text(TERM).value
+                term = re.findall('<option .*?value="(.+)??".*?>{}(-Tentative)?</option>'.format(TERM), b.html)[0][0]
                 b.find_by_id("MainContent_SrearchUC_ddlTerm").select(term)
                 b.find_by_id("MainContent_SrearchUC_ddlSubject").select(SUB)
                 b.find_by_id("MainContent_SrearchUC_txtCourseNumber").fill(SUB_NUM)
