@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['main_app.py'],
-             pathex=['/Users/Jevin/Desktop/GITHUB_REPO/MSU_ROLL/source_win'],
+             pathex=['C:\\Users\\jiang\\Desktop\\MSU_ROLL\\source_win'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -31,7 +31,3 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                name='MSUroll')
-app = BUNDLE(coll,
-             name='MSUroll.app',
-             icon='sushi.ico',
-             bundle_identifier=None)
