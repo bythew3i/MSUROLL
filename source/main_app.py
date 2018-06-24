@@ -12,6 +12,7 @@ import sys # for debug purpose
 # path for chromedriver
 executable_path = {'executable_path':'/usr/local/bin/chromedriver'}
 HEADLESS = True
+# HEADLESS = False
 
 class MSUROLLAPP(Tk):
     def __init__(self):
@@ -331,10 +332,14 @@ class RollingPage(Frame):
                 b.visit(URL)
                 # term = b.find_by_text(TERM).value
                 term = re.findall('<option .*?value="(.+)??".*?>{}(-Tentative)?</option>'.format(TERM), b.html)[0][0]
-                b.find_by_id("MainContent_SrearchUC_ddlTerm").select(term)
-                b.find_by_id("MainContent_SrearchUC_ddlSubject").select(SUB)
-                b.find_by_id("MainContent_SrearchUC_txtCourseNumber").fill(SUB_NUM)
-                b.find_by_id("MainContent_SrearchUC_btnSubmit").click()
+                # b.find_by_id("MainContent_SrearchUC_ddlTerm").select(term)
+                # b.find_by_id("MainContent_SrearchUC_ddlSubject").select(SUB)
+                # b.find_by_id("MainContent_SrearchUC_txtCourseNumber").fill(SUB_NUM)
+                # b.find_by_id("MainContent_SrearchUC_btnSubmit").click()
+                b.find_by_id("MainContent_ddlTerm").select(term)
+                b.find_by_id("MainContent_ddlSubject").select(SUB)
+                b.find_by_id("MainContent_txtCourseNumber").fill(SUB_NUM)
+                b.find_by_id("MainContent_btnSubmit").click()
                 combo = "{} {} Section {}".format(SUB, SUB_NUM, SEC)
                 link = re.findall('<a href="(.+)?" title="[^"]+add {} to your planner"?>'.format(combo), b.html)[0]
 
