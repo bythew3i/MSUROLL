@@ -39,7 +39,7 @@ class MSUROLLAPP(Tk):
 
         self.updateURL = "https://raw.githubusercontent.com/by-the-w3i/MSU_ROLL/master/VERSION"
         self.downloadURL = "https://github.com/by-the-w3i/MSU_ROLL/releases"
-        self.version = "1.3"
+        self.version = "1.32"
 
 
 
@@ -93,7 +93,7 @@ class MainPage(Frame):
 
         Label(self, text="Year:").grid(row=2, column=0, sticky=E)
         self.year_entry = Entry(self, width=10)
-        self.year_entry.insert(0,'2018')
+        self.year_entry.insert(0,'2019')
         self.year_entry.grid(row=2, column=1)
 
         self.season = StringVar(self)
@@ -362,8 +362,8 @@ class RollingPage(Frame):
         # print(self.ready_table)
 
 
-        STATUS_CODE = "MainContent_UCPlanned_rptPlanner_tdStatus_"
-        ENROLL_CODE = "MainContent_UCPlanned_rptPlanner_imgEnroll_"
+        STATUS_CODE = "MainContent_UCPlan_rptPlanner_tdStatus_"
+        ENROLL_CODE = "MainContent_UCPlan_rptPlanner_imgEnroll_"
         CONTINUE_CODE ="MainContent_btnContinue"
         to_delete = None
         # looping arround
