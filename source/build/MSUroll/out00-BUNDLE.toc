@@ -1,3 +1,0 @@
-([('MSUroll',
-   '/Users/Jevin/Desktop/GITHUB_REPO/MSU_ROLL/source/dist/MSUroll',
-   'EXECUTABLE')],)
