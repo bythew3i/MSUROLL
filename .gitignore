@@ -1,2 +1,4 @@
 mac_download/MSUroll_disk.dmg
 source*/dist
+source*/build
+source*/__pycache__
